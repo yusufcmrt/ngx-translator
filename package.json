@@ -1,0 +1,46 @@
+{
+  "name": "ngx-translator",
+  "version": "0.1.0",
+  "author": "Yusuf CÖMERT",
+  "bin": {
+    "ngx-translator": "./bin/run"
+  },
+  "bugs": "https://github.com/yusufcmrt/ngx-translator/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^2",
+    "axios": "^0.19.0",
+    "tslib": "^1"
+  },
+  "devDependencies": {
+    "@oclif/tslint": "^3",
+    "@types/node": "^10",
+    "ts-node": "^8",
+    "tslint": "^5",
+    "typescript": "^3.3"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib"
+  ],
+  "homepage": "https://github.com/yusufcmrt/ngx-translator",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "bin": "ngx-translator"
+  },
+  "repository": "yusufcmrt/ngx-translator",
+  "scripts": {
+    "posttest": "tslint -p . -t stylish",
+    "prepack": "rm -rf lib && tsc -b",
+    "test": "echo NO TESTS"
+  },
+  "types": "lib/index.d.ts"
+}
